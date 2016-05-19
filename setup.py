@@ -131,6 +131,9 @@ setup(
             '.xlt = mfr.extensions.unoconv:UnoconvExporter',
             # '.xml = mfr.extensions.unoconv:UnoconvExporter',
             '.xpm = mfr.extensions.unoconv:UnoconvExporter',
+
+            # LaTeX
+            '.tex = mfr.extensions.latex:LatexExporter',
         ],
         'mfr.renderers': [
             # audio
@@ -513,7 +516,6 @@ setup(
             '.tcl = mfr.extensions.codepygments:CodePygmentsRenderer',
             '.tcsh = mfr.extensions.codepygments:CodePygmentsRenderer',
             '.tea = mfr.extensions.codepygments:CodePygmentsRenderer',
-            '.tex = mfr.extensions.codepygments:CodePygmentsRenderer',
             '.thy = mfr.extensions.codepygments:CodePygmentsRenderer',
             '.tmpl = mfr.extensions.codepygments:CodePygmentsRenderer',
             '.toc = mfr.extensions.codepygments:CodePygmentsRenderer',
@@ -741,7 +743,10 @@ setup(
             '.webm = mfr.extensions.video:VideoRenderer',
 
             # JASP
-            '.jasp = mfr.extensions.jasp:JASPRenderer'
+            '.jasp = mfr.extensions.jasp:JASPRenderer',
+
+            # LaTeX
+            '.tex = mfr.extensions.latex:LatexRenderer',
         ]
     },
 )
